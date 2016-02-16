@@ -1,0 +1,401 @@
+
+/******************/
+/*  MAIN SECTION  */
+/******************/
+
+/* MAIN NAVIGATION */
+
+.main-news h1.first {	clear:both;
+	margin:0px;
+	padding:4px 20px 3px 20px;
+	background-color:rgb(160,214,81);
+	font-family:"trebuchet ms",arial,sans-serif;
+	color:rgb(255,255,255);
+	font-weight:bold;
+	font-size:150%;
+	}
+.main-news h1 {	clear:both; margin:30px 0 20px 0;
+	padding:4px 20px 3px 20px;
+	background:rgb(190,190,190);
+	font-family:"trebuchet ms",arial,sans-serif;
+	color:rgb(255,255,255);
+	font-weight:bold;
+	font-size:150%;
+	}
+
+.main-news h3 {	clear:both;
+	margin:10px 10px 5px 20px;
+	color:rgb(80,80,80);
+	font-weight:bold;
+	font-size:110%;
+	}
+.main-news p {	clear:both;
+	margin:0 10px 10px 20px;
+	color:rgb(80,80,80);
+	line-height:1.3em;
+	font-size:110%;
+	}
+
+/* MAIN CONTENT */
+.main-content h1.pagetitle {	margin:0 0 0.4em 0;
+	padding:0 0 2px 0;
+	border-bottom:solid 7px rgb(160,214,81);
+	font-family:"trebuchet ms",arial,sans-serif;
+	color:rgb(100,100,100);
+	font-weight:bold;
+	font-size:220%;
+	}
+.main-content h1.block {	clear:both;
+	margin:1.0em 0 .5em 0;
+	padding:2px 0 2px 50px;
+	background:rgb(160, 214, 81);
+	font-family:"trebuchet ms",arial,sans-serif;
+	color:rgb(255,255,255);
+	font-weight:bold;
+	font-size:150%;
+	}
+
+.main-content h1 {	clear:both;
+	margin:1.0em 0 0.5em 0;
+	font-family:"trebuchet ms",arial,sans-serif;
+	color:rgb(80,80,80);
+	font-weight:normal;
+	font-size:210%;
+	}
+.main-content h2 {	clear:both;
+	margin:1.0em 0 0.5em 10em;
+	font-family:"trebuchet ms",arial,sans-serif;
+	color:rgb(80,80,80);
+	font-weight:normal;
+	font-size:170%;
+	}
+.main-content h3 {	clear:both;
+	margin:1.0em 0 0.5em 0;
+	font-family:"trebuchet ms",arial,sans-serif;
+	color:rgb(125,125,125);
+	font-weight:bold;
+	font-size:150%;
+	}
+.main-content h6 {	margin:1.2em 0 0.2em 0;
+	color:rgb(80,80,80);
+	font-weight:bold;
+	font-size:120%;
+	}
+.main-content p {	margin:0 0 1.0em 0;
+	line-height:1.5em;
+	font-size:120%;
+	}
+.main-content p.details {	clear:both;
+	margin:-0.25em 0 1.0em 0;
+	line-height:1.0em;
+	font-size:110%;
+	}
+
+.main-content table {    /*overflow:scroll; */
+	clear:both;
+	margin:0 0 0.2em 0;
+	/*table-layout: fixed;*/
+	border-collapse:collapse;
+	empty-cells:show;
+	background-color:rgb(233,232,244);
+	}
+
+.main-content table th.top {	height:6.0em;
+	padding:2px 2px 2px 2px;
+	empty-cells:show;
+	background-color:rgb(160,214,81);
+	text-align:center;
+	color:rgb(255,255,255);
+	font-weight:bold;
+	font-size:105%;
+	}
+.main-content table th {	height:3.0em;
+	padding:0 5px 0 5px;
+	border-left:solid 2px rgb(255,255,255);
+	border-right:solid 2px rgb(255,255,255);
+	border-top:solid 2px rgb(255,255,255);
+	border-bottom:solid 2px rgb(255,255,255);
+	background-color:rgb(225,225,225);
+	text-align:left;
+	color:rgb(80,80,80);
+	font-weight:bold;
+	font-size:105%;
+	}
+.main-content table td {	height:3.0em;
+	padding:1px 4px 1px 4px;
+	border-left:solid 2px rgb(255,255,255);
+	border-right:solid 2px rgb(255,255,255);
+	border-top:solid 2px rgb(255,255,255);
+	border-bottom:solid 2px rgb(255,255,255);
+	background-color:rgb(225,225,225);
+	text-align:center;
+	font-weight:normal;
+	color:rgb(80,80,80);
+	font-size:100%;
+	}
+tr.coloredRow td, tr.coloredRow th{    background-color:rgb(227,246,200);
+	}
+tr.hoverRow td, tr.hoverRow th {
+	background-color:rgb(160,214,81);
+	}
+tr.clickedRow td, tr.clickedRow th {
+	background-color:rgb(255,204,51);
+	}
+#TSpecialities input{
+    text-align:center;
+	font-weight:bold;
+	color:rgb(80,80,80);
+	font-size:95%;
+	}
+
+#TSpecialities select{
+    font-weight:bold;
+	color:rgb(80,80,80);
+	font-size:95%;
+	}
+
+#TSpecialities input.button{
+    width:20px;
+    height:20px;
+    background:url(../img/save.png) no-repeat;
+    cursor:pointer;
+	border:none;
+	}
+
+p.caption {	clear:both;
+	margin:0.5em 0 2.0em 20px;
+	text-align:left;
+	color:rgb(80,80,80);
+	font-size:110%;
+	font-weight:bold;
+	}
+p.caption a:hover {
+	text-decoration:none;
+	font-size:115%;
+	color:rgb(98,143,23);
+	}
+
+.main-content ul {	list-style:none;
+	margin:0.5em 0 1.0em 0;
+	}
+.main-content ul li {	margin:0 20px 0.2em 10px;
+	padding:0 0 0 12px;
+	background:url(../img/bg_bullet_full_1.gif) no-repeat 0 0.5em;
+	line-height:1.4em;
+	font-size:130%;
+	}
+.main-content ol {	margin:0.5em 0 1.0em 20px !important /*Non-IE6*/;
+	margin:0.5em 0 1.0em 25px /*IE6*/;
+	}
+.main-content ol li {	list-style-position:outside;
+	margin:0 0 0.2em 0;
+	line-height:1.4em; font-size:120%;
+	}
+.main-content ul li a.active{
+	font-size:110%;
+	color:#628F17;
+	}
+
+.contactform {	width:618px;
+	margin:2.0em 0 0 0em;
+	padding:10px 10px 0 10px;
+	border:solid 1px rgb(200,200,200);
+	background-color:rgb(240,240,240);
+	}
+.contactform fieldset {	padding:20px 0 0 0 !important /*Non-IE6*/;
+	padding:0 /*IE6*/;
+	margin:0 0 20px 0;
+	border:solid 1px rgb(127,167,31);
+	}
+.contactform fieldset legend {	margin:0 0 0 5px !important /*Non-IE*/;
+	margin:0 0 20px 5px /*IE6*/;
+	padding:0 2px 0 2px;
+	color:rgb(80,80,80);
+	font-weight:bold;
+	font-size:130%;
+	}
+.contactform fieldset.small {	float:left;
+	width:354px;
+	margin:-30px 0 10px 230px;
+	padding:5px 0 0 0 !important /*Non-IE6*/;
+	padding:0 /*IE6*/;
+	}
+.contactform label.left {	float:left;
+	text-align:right;
+	width:210px;
+	margin:0 10px 0 0;
+	padding-right:5px;
+	padding-left:5px;
+	font-size:110%;
+	color:rgb(80,80,80);
+	font-weight:bold;
+	clear:left;
+	}
+.contactform label.small {
+	float:none;
+	text-align:right;
+	width:auto;
+	margin:0 0 10px 0;
+	padding:0 0 0 20px;
+	font-size:90%;
+	color:rgb(80,80,80);
+	font-weight:bold;
+	clear:left;
+	}
+.contactform select.combo {	width:355px;
+	padding:2px;
+	border:solid 1px rgb(200,200,200);
+	font-family:verdana,arial,sans-serif;
+	font-size:100%;
+	color:rgb(80,80,80);
+
+	}
+.contactform input.field {	width:350px;
+	padding:2px;
+	border:solid 1px rgb(200,200,200);
+	font-family:verdana,arial,sans-serif;
+	font-size:100%;
+	color:rgb(80,80,80);
+
+	}
+.contactform textarea {	width:350px;
+	padding:2px;
+	border:solid 1px rgb(200,200,200);
+	font-family:verdana,arial,sans-serif;
+	font-size:100%;
+	color:rgb(80,80,80);
+
+	}
+
+.contactform input.button {	float:right;
+	width:9.0em;
+	margin-right:30px;
+	margin-bottom:5px;
+	padding:1px !important /*Non-IE6*/;
+	padding:0 /*IE6*/;
+	background:rgb(230,230,230);
+	border:solid 1px rgb(150,150,150);
+	text-align:center; font-family:verdana,arial,sans-serif;
+	color:rgb(80,80,80);
+	font-size:110%;
+	}
+.contactform input.button:hover {	cursor: pointer;
+	border:solid 1px rgb(80,80,80);
+	background:rgb(160,214,81);
+	}
+
+.contactform select.combo:focus, .contactform input.field:focus, .contactform textarea:focus {	background-color:rgb(217,239,185);
+	}
+
+.filterform {
+	width:818px;
+	margin:0 0 0 0;
+	padding:10px 10px 0 10px;
+	border:solid 1px rgb(200,200,200);
+	background-color:rgb(240,240,240);
+	}
+.filterform label{
+	text-align:right;
+	margin:0 5px 0 30px;
+	padding-right:5px;
+	padding-left:5px;
+	font-size:110%;
+	color:rgb(80,80,80);
+	font-weight:bold;
+	}
+.filterform select.combo {
+	width:385px;
+	padding:2px;
+	border:solid 1px rgb(200,200,200);
+	font-family:verdana,arial,sans-serif;
+	font-size:100%;
+	color:rgb(80,80,80);
+	}
+.filterform input.field {
+	width:130px;
+	padding:2px;
+	border:solid 1px rgb(200,200,200);
+	font-family:verdana,arial,sans-serif;
+	font-size:100%;
+	color:rgb(80,80,80);
+	}
+.filterform input.button {
+	width:12.0em;
+	margin: 0 0 5px 30px;
+	padding:1px !important /*Non-IE6*/;
+	padding:0 /*IE6*/;
+	background:rgb(230,230,230);
+	border:solid 1px rgb(150,150,150);
+	text-align:center; font-family:verdana,arial,sans-serif;
+	color:rgb(80,80,80);
+	font-size:110%;
+	}
+.filterform input.button:hover {
+	cursor: pointer;
+	border:solid 1px rgb(80,80,80);
+	background:rgb(160,214,81);
+	}
+
+.simpleform input.button {
+	width:12.0em;
+	margin: 0 0 5px 30px;
+	padding:1px !important /*Non-IE6*/;
+	padding:0 /*IE6*/;
+	background:rgb(230,230,230);
+	border:solid 1px rgb(150,150,150);
+	text-align:center; font-family:verdana,arial,sans-serif;
+	color:rgb(80,80,80);
+	font-size:90%;
+	font-weight:bold;
+	}
+
+.simpleform input.button:hover {
+	cursor: pointer;
+	border:solid 1px rgb(80,80,80);
+	background:rgb(160,214,81);
+	}
+
+
+.filterform select.combo:focus, .filterform input.field:focus, .filterform textarea:focus {
+	background-color:rgb(217,239,185);
+	}
+/* MAIN SUBCONTENT */
+.main-subcontent h1 {clear:both; margin:0 0 10px 0; padding:4px 10px 3px 10px; background-color:rgb(190,190,190); font-family:"trebuchet ms",arial,sans-serif; color:rgb(255,255,255); font-weight:bold; font-size:140%;}
+.main-subcontent h1.green {clear:both; margin:0 0 5px 0; padding:4px 10px 3px 10px; background-color:rgb(160,214,81); font-family:"trebuchet ms",verdana,arial,sans-serif; color:rgb(255,255,255); font-weight:bold; font-size:140%;}
+.main-subcontent h1.blue {clear:both; margin:0 0 5px 0; padding:4px 10px 3px 10px; background-color:rgb(137,170,214); font-family:"trebuchet ms",verdana,arial,sans-serif; color:rgb(255,255,255); font-weight:bold; font-size:140%;}
+.main-subcontent h1.red {clear:both; margin:0 0 5px 0; padding:4px 10px 3px 10px; background-color:rgb(212,12,12); font-family:"trebuchet ms",verdana,arial,sans-serif; color:rgb(255,255,255); font-weight:bold; font-size:140%;}
+ /* Note: h2 non-existent, to make HTML-code interchangeable between 'main-navigation' and 'main-subcontent' */
+.main-subcontent h3 {clear:both; margin:1.0em 10px 0.5em 10px; color:rgb(80,80,80); font-weight:bold; font-size:110%;}
+.main-subcontent p {clear:both; margin:0 10px 1.0em 10px; color:rgb(80,80,80); line-height:1.3em; font-size:110%;}
+.main-subcontent p.center {text-align:center;}
+.main-subcontent p.right {text-align:right;}
+
+.main-subcontent ul {list-style:none; margin:0.5em 10px 1.0em 10px;}
+.main-subcontent ul li {margin:5px 0 0.2em 2px; padding:0 0 0 11px; background:url(../img/bg_bullet_full_1.gif) no-repeat 0 0.4em; line-height:1.2em; font-size:110%;}
+.xmain-subcontent ol {margin:0.5em 10px 1.0em 30px !important /*Non-IE6*/; margin:0.5em 10px 1.0em 34px /*IE6*/;}
+.main-subcontent ol {margin:0.5em 10px 1.0em 30px !important /*Non-IE6*/; margin:0.5em 10px 1.0em 35px /*IE6*/;}
+.main-subcontent ol li {list-style-position:outside; margin:0 0 0.4em 0; font-size:110%;}
+
+.main-subcontent .loginform {width:160px; margin:0 10px 0 10px;}
+.main-subcontent .loginform p {clear:both; margin:0; padding:0;}
+.main-subcontent .loginform fieldset {width:160px; border:none;}
+.main-subcontent .loginform label.top {float:left; width:150px; margin:0 0 2px 0; font-size:110%;}
+.main-subcontent .loginform label.right {float:left; width:125px; margin:5px 0 0 0; padding:0 0 0 3px; /*IE6*/; font-size:110%;}
+.main-subcontent .loginform input.field {width:158px; margin:0 0 5px 0; padding:0.1em 0 0.2em 0 !important /*Non-IE6*/; padding:0.2em 0 0.3em 0 /*IE6*/; border:solid 1px rgb(200,200,200); font-family:verdana,arial,sans-serif; font-size:110%;}
+.main-subcontent .loginform input.checkbox {float:left; margin:5px 0 0 0 !important /*Non-IE6*/; margin:2px 0 0 -3px /*IE6*/; border:none;}
+.main-subcontent .loginform input.radio {float:left; margin:5px 0 0 0 !important /*Non-IE6*/; margin:2px 0 0 -3px /*IE6*/; border:none;}
+.main-subcontent .loginform select {width:158px; margin:0 0 5px 0; padding:0.1em 0 0.2em 0 !important /*Non-IE6*/; padding:0.2em 0 0.3em 0 /*IE6*/; border:solid 1px rgb(200,200,200); font-family:verdana,arial,sans-serif; font-size:110%;}
+.main-subcontent .loginform input.button {float:left; width:5.0em; margin:10px 0 5px 0; padding:1px; background:rgb(230,230,230); border:solid 1px rgb(150,150,150); text-align:center; font-family:verdana,arial,sans-serif; color:rgb(150,150,150); font-size:110%;}
+.main-subcontent .loginform input.button:hover {cursor:pointer; border:solid 1px rgb(80,80,80); background:rgb(160,214,81); color:rgb(80,80,80);}
+
+/********************/
+/*  COMMON CLASSES  */
+/********************/
+
+.main a {color:rgb(70,122,167); font-weight:bold; text-decoration:none;}
+.main-content h1 a {color:rgb(70,122,167); font-weight:normal; text-decoration:none;}
+.main a:hover {color:rgb(42,90,138); text-decoration:underline;}
+.main a:visited {color:rgb(42,90,138);}
+
+.main a img {border:solid 1px rgb(150,150,150);}
+.main a:hover img {border:solid 1px rgb(220,220,220);}

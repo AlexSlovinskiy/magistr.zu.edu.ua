@@ -1,0 +1,68 @@
+* {
+	padding:0;
+	margin:0;
+	}
+body {
+	font-size:62.5%;
+	background-color:rgb(255,255,255);
+	font-family:verdana,arial,sans-serif;
+	}
+.main-content {
+	display:inline; /*Fix IE floating margin bug*/
+	float:left;
+	width:640px;
+	margin:0 0 0 30px;
+	overflow:visible !important; /*Firefox*/
+	overflow:hidden; /*IE6*/
+	}
+.main-content h1.pagetitle {
+	margin:0 0 0.4em 0;
+	padding:0 0 2px 0;
+	border-bottom:solid 7px rgb(160,214,81);
+	font-family:"trebuchet ms",arial,sans-serif;
+	color:rgb(100,100,100);
+	font-weight:bold;
+	font-size:220%;
+	}
+
+.printBtn p{
+	margin-right:50px;
+	border-bottom:solid 1px rgb(127,167,31);
+	}
+.printBtn input.button {
+	width:12.0em;
+	margin: 0 0 5px 30px;
+	padding:1px !important /*Non-IE6*/;
+	padding:0 /*IE6*/;
+	background:rgb(230,230,230);
+	border:solid 1px rgb(150,150,150);
+	text-align:center; font-family:verdana,arial,sans-serif;
+	color:rgb(80,80,80);
+	font-size:120%;
+	}
+.printBtn input.button:hover {
+	cursor: pointer;
+	border:solid 1px rgb(80,80,80);
+	background:rgb(160,214,81);
+	}
+
+p.caption {
+	clear:both;
+	margin:0.5em 0 2.0em 20px;
+	text-align:left;
+	color:rgb(80,80,80);
+	font-size:110%;
+	font-weight:bold;
+	}
+p.caption a:hover {
+	text-decoration:none;
+	color:rgb(98,143,23);
+	}
+
+.main a {color:rgb(70,122,167); font-weight:bold; text-decoration:none;}
+.main-content h1 a {color:rgb(70,122,167); font-weight:normal; text-decoration:none;}
+.main a:hover {color:rgb(42,90,138); text-decoration:underline;}
+.main a:visited {color:rgb(42,90,138);}
+
+.main a img {border:solid 1px rgb(150,150,150);}
+.main a:hover img {border:solid 1px rgb(220,220,220);}

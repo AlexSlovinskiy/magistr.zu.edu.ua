@@ -1,0 +1,23 @@
+1" 00000 30560 353 PROXY/64.214.231.160:80
+10.2.4.108 - - [02/Feb/2011:11:35:24 +0200] "GET http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootseq.txt HTTP/1.1" 00000 288 353 PROXY/64.214.231.160:80
+10.2.8.41 - - [02/Feb/2011:11:35:25 +0200] "GET http://counter.yadro.ru/hit?rhttp%3A//vkontakte.ru/groups.php%3Fact%3Dpeople%26gid%3D2711853;s1366*768*24;uhttp%3A//vkontakte.ru/groups.php;0.10888974725683953 HTTP/1.1" 00001 0 0 PROXY/0.0.0.0:0
+10.2.4.108 - - [02/Feb/2011:11:35:25 +0200] "GET http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootstl.cab HTTP/1.1" 00000 30560 353 PROXY/64.214.231.160:80
+10.2.8.41 - - [02/Feb/2011:11:35:25 +0200] "GET http://cs289.vkontakte.ru/u9144210/93643128/s_30afaf2e.jpg HTTP/1.1" 00000 2358 641 PROXY/93.186.225.139:80
+10.2.8.41 - - [02/Feb/2011:11:35:25 +0200] "GET http://cs123.vkontakte.ru/u9144210/42817147/s_91c52b9b.jpg HTTP/1.1" 00000 2919 641 PROXY/93.186.224.123:80
+10.2.8.41 - - [02/Feb/2011:11:35:25 +0200] "GET http://cs289.vkontakte.ru/u9144210/93627770/s_18ab6054.jpg HTTP/1.1" 00000 2895 641 PROXY/93.186.225.139:80
+10.2.8.41 - - [02/Feb/2011:11:35:25 +0200] "GET http://www.tns-counter.ru/V13a***R%3Ehttp://vkontakte.ru/groups.php?act=people&gid=2711853*vkontakte_ru/ru/CP1251/tmsec=vkontakte_total/ HTTP/1.1" 00000 442 670 PROXY/217.73.200.220:80
+10.2.8.41 - - [02/Feb/2011:11:35:25 +0200] "GET http://cs289.vkontakte.ru/u9144210/93617201/s_425df639.jpg HTTP/1.1" 00000 1988 641 PROXY/93.186.225.139:80
+10.2.4.108 - - [02/Feb/2011:11:35:25 +0200] "GET http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootseq.txt HTTP/1.1" 00000 288 353 PROXY/64.214.231.160:80
+10.2.4.108 - - [02/Feb/2011:11:35:25 +0200] "GET http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootseq.txt HTTP/1.1" 00000 288 353 PROXY/64.214.231.160:80
+10.2.4.108 - - [02/Feb/2011:11:35:25 +0200] "GET http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootstl.cab HTTP/1.1" 00000 30560 353 PROXY/64.214.231.160:80
+10.2.4.108 - - [02/Feb/2011:11:35:25 +0200] "GET http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootseq.txt HTTP/1.1" 00000 288 353 PROXY/64.214.231.160:80
+10.2.8.41 - - [02/Feb/2011:11:35:25 +0200] "GET http://cs9577.vkontakte.ru/u58711635/e_c717e747.jpg HTTP/1.1" 00013 0 0 PROXY/93.186.229.177:80
+10.2.4.108 - - [02/Feb/2011:11:35:25 +0200] "GET http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootstl.cab HTTP/1.1" 00000 30560 353 PROXY/64.214.231.160:80
+10.2.4.108 - - [02/Feb/2011:11:35:25 +0200] "GET http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootstl.cab HTTP/1.1" 00000 30560 353 PROXY/64.214.231.160:80
+10.2.4.108 - - [02/Feb/2011:11:35:25 +0200] "GET http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootseq.txt HTTP/1.1" 00000 288 353 PROXY/64.214.231.160:80
+10.2.4.108 - - [02/Feb/2011:11:35:25 +0200] "CONNECT urs.microsoft.com:443 HTTP/1.0" 00000 4538 288 PROXY/94.245.120.189:443
+10.2.1.8 - - [02/Feb/2011:11:35:26 +0200] "GET http://www.google-analytics.com/ga.js HTTP/1.1" 00001 0 0 PROXY/0.0.0.0:0
+10.2.4.108 - - [02/Feb/2011:11:35:26 +0200] "GET http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootstl.cab HTTP/1.1" 00000 30560 353 PROXY/64.214.231.160:80
+10.2.1.145 - - [02/Feb/2011:11:35:26 +0200] "GET http://www.google-analytics.com/ga.js HTTP/1.0" 00001 0 0 PROXY/0.0.0.0:0
+10.2.4.108 - - [02/Feb/2011:11:35:26 +0200] "CONNECT urs.microsoft.com:443 HTTP/1.0" 00000 4538 288 PROXY/94.245.120.189:443
+10.2.4.108 - - [02/Feb/2011:11:35:26 +0200] "GET http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en/aut
