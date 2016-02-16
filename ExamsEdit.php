@@ -60,41 +60,34 @@ if (isset($_GET["id"]))
             	}
             }
 
- if (!isset($_POST['set_exams']))
+if (!isset($_POST['set_exams'])) {
+	if ($cross_enter == '-') {
+		$_POST["exam_mark1"] = $bal1 / 2;
+	} else {
+		$_POST["exam_mark1"] = $bal1;
+	}
+	$_POST["exam_mark2"] = $bal2;
+	$_POST["exam_mark3"] = $bal3;
+	if ($dip != 0) $_POST["dip_average"] = $dip;
+}
 
-        {
-        if (substr($speciality,0,1)=="7") $_POST["exam_mark1"] = $bal1/3;
-            		else {
-            			if (substr($speciality,0,1)=="8" && $cross_enter == '-') $_POST["exam_mark1"]=$bal1/2;
-            				else   $_POST["exam_mark1"]=$bal1;
-            			}
-            	$_POST["exam_mark2"] = $bal2;
-            	$_POST["exam_mark3"] = $bal3;
-            	if ($dip!=0) $_POST["dip_average"]=$dip;
-        }
-
-if (isset($_POST["set_exams"]))
-	{
-	if ($_POST["exam_mark1"]!="")
-		{
-		if (substr($speciality,0,1)=="7") $bal1=$_POST["exam_mark1"]*3;
-			else {
-            			if (substr($speciality,0,1)=="8" && $cross_enter == '-') $bal1 = $_POST["exam_mark1"]*2;
-            				else   $bal1 = $_POST["exam_mark1"];
-            			}
+if (isset($_POST["set_exams"])) {
+	if ($_POST["exam_mark1"] != "") {
+		if ($cross_enter == '-') {
+			$bal1 = $_POST["exam_mark1"] * 2;
+		} else {
+			$bal1 = $_POST["exam_mark1"];
 		}
-	if ($_POST["exam_mark2"]!="")
-		{
-		$bal2=$_POST["exam_mark2"];
-		}
-	if ($_POST["exam_mark3"]!="")
-		{
-		$bal3=$_POST["exam_mark3"];
-		}
-	if ($_POST["dip_average"]!="")
-		{
-		$avg=$_POST["dip_average"];
-		}
+	}
+	if ($_POST["exam_mark2"] != "") {
+		$bal2 = $_POST["exam_mark2"];
+	}
+	if ($_POST["exam_mark3"] != "") {
+		$bal3 = $_POST["exam_mark3"];
+	}
+	if ($_POST["dip_average"] != "") {
+		$avg = $_POST["dip_average"];
+	}
 
 	$query="UPDATE `abiturients` SET `bal1` =  '".$bal1."' , `bal2` =  '".$bal2."' , `bal3` =  '".$bal3."'  , `dip_average` = '".$avg."' WHERE `ab_id` = '".$_GET["id"]."' LIMIT 1 ;";
 	$sql = mysql_query($query) or die(mysql_error());

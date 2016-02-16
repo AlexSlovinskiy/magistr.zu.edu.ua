@@ -1,20 +1,20 @@
 						<div class="contactform">
 							<form method="post" action="<?$_SERVER["SCRIPT_NAME"]?>">
               				<fieldset>
-              					<legend>&nbsp;ІНФОРМАЦІЯ ПРО АБІТУРІЄНТА&nbsp;</legend>
-                                <p><label for="lastname" class="left">Прізвище:</label>
+              					<legend>&nbsp;пїЅпїЅпїЅпїЅпїЅпїЅпїЅЦІпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅРІпїЅпїЅпїЅпїЅ&nbsp;</legend>
+                                <p><label for="lastname" class="left">пїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</label>
                    					<input type="text" name="lastname" id="lastname" class="field" value="<?echo $_POST['lastname'];?>" tabindex="1" style="<?if ($_POST['lastname']=="" && isset($_POST['add_abit'])) echo $element_error?>"/>
                    				</p>
 
-                   				<p><label for="firstname" class="left">Ім'я:</label>
+                   				<p><label for="firstname" class="left">пїЅпїЅ'пїЅ:</label>
                    					<input type="text" name="firstname" id="firstname" class="field" value="<?echo $_POST['firstname'];?>" tabindex="20" style="<?if ($_POST['firstname']=="" && isset($_POST['add_abit'])) echo $element_error?>"/>
                    				</p>
 
-                   				<p><label for="patronymic" class="left">По батькові:</label>
+                   				<p><label for="patronymic" class="left">пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</label>
                    					<input type="text" name="patronymic" id="patronymic" class="field" value="<?echo $_POST['patronymic'];?>" tabindex="30" style="<?if ($_POST['patronymic']=="" && isset($_POST['add_abit'])) echo $element_error?>"/>
                    				</p>
 
-                   				<p><label for="faculty" class="left">Факультет:</label>
+                   				<p><label for="faculty" class="left">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</label>
                    					<select name="faculty" id="faculty" class="combo" tabindex="40" style="<?if ($_POST['faculty']=="" && isset($_POST['add_abit'])) echo $element_error?>">
                      					<option value="<?echo $_POST['faculty']?>"> <?if ($_POST['faculty']!="") echo $_POST['faculty']; else echo "..."?> </option>
                      					<?if (isset($_POST['add_abit'])) echo '<option value=""> ... </option>';?>
@@ -30,13 +30,13 @@
                      				</select>
                      			</p>
 
-                           		<p><label for="training" class="left">Галузь знань:</label>
+                           		<p><label for="training" class="left">пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ:</label>
                    					<select name="training" id="training" class="combo" tabindex="50" style="<?if ($_POST['training']=="" && isset($_POST['add_abit'])) echo $element_error?>">
                    						<option value="<?echo $_POST['training']?>"> <?echo str_replace($_POST['faculty'],"",$_POST['training'])?> </option>
                    					</select>
                      			</p>
 
-                     			<p><label for="speciality" class="left">Спеціальність:</label>
+                     			<p><label for="speciality" class="left">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</label>
                    					<select name="speciality" id="speciality" class="combo" tabindex="60" style="<?if ($_POST['speciality']=="" && isset($_POST['add_abit'])) echo $element_error?>">
                    						<option value="<?echo $_POST['speciality']?>"> <?echo $_POST['speciality']?> </option>
                    					</select>
@@ -62,7 +62,7 @@
 
 								if($type!="mag")
 									{
-									echo '<p><label for="specialization" class="left">Спеціалізація:</label>';
+									echo '<p><label for="specialization" class="left">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</label>';
                    					echo '<select name="specialization" id="specialization" class="combo" tabindex="65" style="';
                    					if ($_POST["specialization"]=="" && isset($_POST["add_abit"])) echo $element_error.'">';
                    						else echo '">';
@@ -72,46 +72,46 @@
 								?>
 
 
-                                <p><label for="institution" class="left">Навчальний заклад, що закінчив абітурієнт:</label>
+                                <p><label for="institution" class="left">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</label>
                                 	<fieldset class="small" style="margin-top:-45px; <?if ($_POST['institution']=="" && isset($_POST['add_abit'])) echo $element_error?>">
                                 		<p> <input type="radio" name="institution" id="ZDU" class="inputRadio" value="ZDU" tabindex="70" style="margin:10px 0 0 15px" <?php if ($_POST['institution']=="ZDU") echo "checked=''";?> onClick="showInstitute()"/>
-                        					<label for="institution" class="small" style="margin-left:-5px">ЖДУ ім. І. Франка</label>
+                        					<label for="institution" class="small" style="margin-left:-5px">пїЅпїЅпїЅ пїЅпїЅ. пїЅ. пїЅпїЅпїЅпїЅпїЅпїЅ</label>
                         					<br /><input type="radio" name="institution" id="other" class="inputRadio" value="other" tabindex="80" style="margin:10px 0 0 15px" <?php if ($_POST['institution']=="other") echo "checked=''";?> onClick="showInstitute()"/>
-                        					<label for="institution" class="small" style="margin-left:-6px">інший</label></p>
+                        					<label for="institution" class="small" style="margin-left:-6px">пїЅпїЅпїЅпїЅпїЅ</label></p>
                                			<div id="otherInstitute" <?php if ($_POST['institution']=="other") echo 'style="display:block"'; else echo 'style="display:none"'?> >
-                               			<p><label for="institution" class="small">Вкажіть назву :</label>
+                               			<p><label for="institution" class="small">пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ :</label>
                    							<textarea name="institution_oth" id="institution_oth" cols="20" rows="2" tabindex="90" style="width:300px; margin-left:15px; <?if ($_POST['institution_oth']=="" && isset($_POST['add_abit'])) echo $element_error?>"><?echo $_POST['institution_oth']?></textarea></p>
                    						</div>
                    					</fieldset>
                    				</p>
 
-                                <p><label for="diplom" class="left">Попередній диплом:</label>
+                                <p><label for="diplom" class="left">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ:</label>
                                 	<fieldset class="small">
-                                		<p><label for="qualification" class="small" style="margin-left:14px"; >Кваліфікація: </label>
+                                		<p><label for="qualification" class="small" style="margin-left:14px"; >пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: </label>
                         				<select name="qualification" id="qualification" class="combo" tabindex="100" style="width:170px; margin-left:2px; <?if ($_POST['qualification']=="" && isset($_POST['add_abit'])) echo $element_error?>">
                      							<option value="<?echo $_POST['qualification']?>"> <?if ($_POST['qualification']!="") echo $_POST['qualification']; else echo "..."?> </option>
-                     							<option value="Бакалавр"> Бакалавр </option>
-                     							<option value="Спеціаліст"> Спеціаліст </option>
-                     							<option value="Магістр"> Магістр </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
                      					</select>
                      					<p style=" <?php if ($_POST['dip_study_type']=="" && isset($_POST['add_abit'])) echo $element_error?>">
-                     						<label for="dip_study_type" class="small" style="margin-left:12px">Денна:</label>
-                        					<input type="radio" name="dip_study_type" id="dip_stc" class="inputRadio" value="Денна" tabindex="101" style="margin-left:1px" <?if ($_POST['dip_study_type']=="Денна") echo 'checked="checked"'?> />
-                        					<label for="dip_study_type" class="small" style="margin-left:12px">Заочна:</label>
-          									<input type="radio" name="dip_study_type" id="dip_zao" class="inputRadio" value="Заочна" tabindex="102" style="margin-left:1px" <?if ($_POST['dip_study_type']=="Заочна") echo 'checked="checked"'?> />
+                     						<label for="dip_study_type" class="small" style="margin-left:12px">пїЅпїЅпїЅпїЅпїЅ:</label>
+                        					<input type="radio" name="dip_study_type" id="dip_stc" class="inputRadio" value="пїЅпїЅпїЅпїЅпїЅ" tabindex="101" style="margin-left:1px" <?if ($_POST['dip_study_type']=="пїЅпїЅпїЅпїЅпїЅ") echo 'checked="checked"'?> />
+                        					<label for="dip_study_type" class="small" style="margin-left:12px">пїЅпїЅпїЅпїЅпїЅпїЅ:</label>
+          									<input type="radio" name="dip_study_type" id="dip_zao" class="inputRadio" value="пїЅпїЅпїЅпїЅпїЅпїЅ" tabindex="102" style="margin-left:1px" <?if ($_POST['dip_study_type']=="пїЅпїЅпїЅпїЅпїЅпїЅ") echo 'checked="checked"'?> />
                                			</p>
                                			<p style="<?php if ($_POST['dip_finans']=="" && isset($_POST['add_abit'])) echo $element_error?>">
-                               				<label for="dip_finans" class="small">Бюджет:</label>
-                        					<input type="radio" name="dip_finans" id="dip_budg" class="inputRadio" value="Бюджет" tabindex="103" style="margin-left:1px" <?if ($_POST['dip_finans']=="Бюджет") echo 'checked="checked"'?> />
-                        					<label for="dip_coast" class="small">Контракт:</label>
-          									<input type="radio" name="dip_finans" id="dip_cont" class="inputRadio" value="Контракт" tabindex="104" style="margin-left:1px" <?if ($_POST['dip_finans']=="Контракт") echo 'checked="checked"'?> />
+                               				<label for="dip_finans" class="small">пїЅпїЅпїЅпїЅпїЅпїЅ:</label>
+                        					<input type="radio" name="dip_finans" id="dip_budg" class="inputRadio" value="пїЅпїЅпїЅпїЅпїЅпїЅ" tabindex="103" style="margin-left:1px" <?if ($_POST['dip_finans']=="пїЅпїЅпїЅпїЅпїЅпїЅ") echo 'checked="checked"'?> />
+                        					<label for="dip_coast" class="small">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</label>
+          									<input type="radio" name="dip_finans" id="dip_cont" class="inputRadio" value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" tabindex="104" style="margin-left:1px" <?if ($_POST['dip_finans']=="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ") echo 'checked="checked"'?> />
                                			</p>
-              							<p><label for="dip_serial" class="small">Серія та номер :</label>
+              							<p><label for="dip_serial" class="small">пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ :</label>
                                 			<input type="text" name="dip_serial" id="dip_serial" class="field" value="<?echo $_POST['dip_serial']?>" tabindex="105" maxlength="5" style="width:45px; text-align:center; <?if ($_POST['dip_serial']=="" && isset($_POST['add_abit'])) echo $element_error?>"/>
-                                   			<label for="dip_number">№</label>
+                                   			<label for="dip_number">пїЅ</label>
                                    			<input type="text" name="dip_number" id="dip_number" class="field" value="<?echo $_POST['dip_number']?>" tabindex="110" maxlength="8" style="width:90px; text-align:center; <?if ($_POST['dip_number']=="" && isset($_POST['add_abit'])) echo $element_error?>"/>
                                    		</p>
-                                		<p><label for="dip_day" class="small">Дата видачі:</label></p>
+                                		<p><label for="dip_day" class="small">пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ:</label></p>
                                 		<p><select name="dip_day" id="dip_day" class="combo" tabindex="120" style="width:45px; margin-left:20px; <?if ($_POST['dip_day']=="" && isset($_POST['add_abit'])) echo $element_error?>">
                                 				<option value="<?echo $_POST['dip_day']?>"> <?if ($_POST['dip_day']!="") echo $_POST['dip_day']; else echo "..."?> </option>
                      							<?
@@ -123,18 +123,18 @@
                      						<label for="dip_month">/</label>
                      						<select name="dip_month" id="dip_month" class="combo" tabindex="130" style="width:100px; margin-left:2px; <?if ($_POST['dip_month']=="" && isset($_POST['add_abit'])) echo $element_error?>">
                                                 <option value="<?echo $_POST['dip_month']?>"> <?if ($_POST['dip_month']!="") echo $_POST['dip_month']; else echo "..."?> </option>
-                     							<option value="січня"> січня </option>
-                     							<option value="лютого"> лютого </option>
-                     							<option value="березня"> березня </option>
-                     							<option value="квітня"> квітня </option>
-                     							<option value="травня"> травня </option>
-                     							<option value="червня"> червня </option>
-                     							<option value="липня"> липня </option>
-                     							<option value="серпня"> серпня </option>
-                     							<option value="вересня"> вересня </option>
-                     							<option value="жовтня"> жовтня </option>
-                     							<option value="листопада"> листопада </option>
-                     							<option value="грудня"> грудня </option>
+                     							<option value="пїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
                      						</select>
                      						<label for="dip_year">/</label>
                                 			<select name="dip_year" id="dip_year" class="combo" tabindex="140" style="width:80px; margin-left:2px; <?if ($_POST['dip_year']=="" && isset($_POST['add_abit'])) echo $element_error?>">
@@ -143,19 +143,18 @@
                      							for($i=date("Y"); $i>=date("Y")-40; $i--) echo '<option value="'.$i.'"> '.$i.' </option>';
                      							?>
                      						</select></p>
-                     					<p><label for="dip_average" class="small" >Cередній бал додатку до диплома:</label>
+                     					<p><label for="dip_average" class="small" >CпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</label>
                                 			<input type="text" name="dip_average" id="dip_average" class="field" value="<?if ($_POST['dip_average']>0) echo $_POST['dip_average']; else echo "";?>" style="width:50px; text-align:center; <?if ($_POST['dip_average']=="" && isset($_POST['add_abit'])) echo $element_error?>" tabindex="149" maxlength="5"/>
                                 		</p>
-                     					<p><label for="dip_honour" class="small">Диплом з відзнакою:</label>
+                     					<p><label for="dip_honour" class="small">пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</label>
                      						<input type="checkbox" name="dip_honour" id="dip_honour" class="checkbox" tabindex="150" <?if ($_POST['dip_honour']=="+") echo 'checked="checked"'?> size="1" value="+"/></p>
-                     					<p><label for="dip_orig" class="small" style="margin-left:2px;">Оригінал документу:</label>
+                     					<p><label for="dip_orig" class="small" style="margin-left:2px;">пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</label>
                      						<input type="checkbox" name="dip_orig" id="dip_orig" class="checkbox" tabindex="155" <?if ($_POST['dip_orig']=="+") echo 'checked="checked"'?> size="1" value="+"/></p>
-                           				<?php if($type=="mag"){
-                           					echo '<p><label for="cross_enter" class="small">Перехресний вступ:</label>
+                           				<?php
+                           					echo '<p><label for="cross_enter" class="small">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ:</label>
                      						<input type="checkbox" name="cross_enter" id="cross_enter" class="checkbox" tabindex="156"';
                      						if ($_POST['cross_enter']=="+") echo 'checked="checked"';
                      						echo ' size="1" value="+"/></p>' ;
-                     						}
                      						?>
                      				</fieldset>
                                	</p>
@@ -179,7 +178,7 @@
 
 								if(1==1)
 									{
-									echo '<p><label for="language" class="left">Іноземна мова, яку вивчав:</label>';
+									echo '<p><label for="language" class="left">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ:</label>';
 									echo '<fieldset class="small"><p>';
 									echo '<select name="language" id="language" class="combo" tabindex="157" style="width:150px; margin-left:20px;';
                    					if ($_POST["language"]=="" && isset($_POST["add_abit"])) echo $element_error.'">';
@@ -187,49 +186,49 @@
 									echo '<option value="';
 									echo $_POST['language'].'">';
 									if ($_POST['language']!="") echo $_POST['language']; else echo '...</option>';
-                     				echo '<option value="Англійська"> Англійська </option>
-                     					<option value="Німецька"> Німецька </option>
-                     					<option value="Французька"> Французька </option>
-                     					<option value="Іспанська"> Іспанська </option>
+                     				echo '<option value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     					<option value="НіпїЅпїЅпїЅпїЅпїЅпїЅ"> НіпїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     					<option value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     					<option value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ </option>
                      					</select></p></fieldset></p>';
                    					}
 								?>
-                               	<p><label for="study_type" class="left">Форма навчання:</label>
+                               	<p><label for="study_type" class="left">пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</label>
                                		<fieldset class="small" style="<?if ($_POST['study_type']=="" && isset($_POST['add_abit'])) echo $element_error?>">
-                               			<p><label for="study_type" class="small">Денна:</label>
-                        				<input type="radio" name="study_type" id="stc" class="inputRadio" value="Денна" tabindex="160" style="margin-left:1px" <?if ($_POST['study_type']=="Денна") echo 'checked="checked"'?> onClick="showTargetStudy()"/>
-                        				<label for="study_type" class="small">Заочна:</label>
-          								<input type="radio" name="study_type" id="zao" class="inputRadio" value="Заочна" tabindex="165" style="margin-left:1px" <?if ($_POST['study_type']=="Заочна") echo 'checked="checked"'?> onClick="showTargetStudy()"/>
+                               			<p><label for="study_type" class="small">пїЅпїЅпїЅпїЅпїЅ:</label>
+                        				<input type="radio" name="study_type" id="stc" class="inputRadio" value="пїЅпїЅпїЅпїЅпїЅ" tabindex="160" style="margin-left:1px" <?if ($_POST['study_type']=="пїЅпїЅпїЅпїЅпїЅ") echo 'checked="checked"'?> onClick="showTargetStudy()"/>
+                        				<label for="study_type" class="small">пїЅпїЅпїЅпїЅпїЅпїЅ:</label>
+          								<input type="radio" name="study_type" id="zao" class="inputRadio" value="пїЅпїЅпїЅпїЅпїЅпїЅ" tabindex="165" style="margin-left:1px" <?if ($_POST['study_type']=="пїЅпїЅпїЅпїЅпїЅпїЅ") echo 'checked="checked"'?> onClick="showTargetStudy()"/>
                                			</p>
                                			<div id="target_study" <?php /*if ($_POST['study_type']=="stc") echo 'style="display:block"'; else*/ echo 'style="display:none"'?> >
-                                        	<p><label for="target" class="small">Цільове направлення:</label>
+                                        	<p><label for="target" class="small">ЦіпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</label>
                                         	<input type="checkbox" name="target" id="target" class="checkbox" tabindex="170" <?if ($_POST['target']=="+") echo 'checked="checked"'?> size="1" value="+"/></p>
                                			</div>
                                		</fieldset>
                                 </p>
 
 
-                                <p><label for="passport" class="left">Паспортні дані:</label>
+                                <p><label for="passport" class="left">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ:</label>
                                 	<fieldset class="small">
-                                		<p><label for="nationality" class="small" style="margin-left:3px"; >Громадянство: </label>
+                                		<p><label for="nationality" class="small" style="margin-left:3px"; >пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: </label>
                         				<select name="nationality" id="nationality" class="combo" tabindex="175" onChange="showCountry()" style="width:205px; margin-left:2px; <?if ($_POST['nationality']=="" && isset($_POST['add_abit'])) echo $element_error?>">
                      							<option value="<?echo $_POST['nationality']?>"> <?if ($_POST['nationality']!="") echo $_POST['nationality']; else echo "..."?> </option>
-                     							<option value="Громадянин України"> Громадянин України </option>
-                     							<option value="Іноземець"> Іноземець </option>
-                     							<option value="Без громадянства"> Без громадянства </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ </option>
                      					</select>
                                			</p>
-                               			<div id="other_country" <?php if ($_POST['nationality']=="Іноземець") echo 'style="display:block"'; else echo 'style="display:none"'?> >
-                                        	<p><label for="country" class="small" style="margin-left:55px">Країна:</label>
+                               			<div id="other_country" <?php if ($_POST['nationality']=="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ") echo 'style="display:block"'; else echo 'style="display:none"'?> >
+                                        	<p><label for="country" class="small" style="margin-left:55px">пїЅпїЅпїЅпїЅпїЅ:</label>
                                         	<input type="text" name="country" id="country" class="field" value="<?echo $_POST['country']?>" tabindex="180"  style="width:200px; <?if ($_POST['country']=="" && isset($_POST['add_abit'])) echo $element_error?>"/></p>
                    				    	</div>
-              							<p><label for="pasp_serial" class="small">Серія та номер:</label>
+              							<p><label for="pasp_serial" class="small">пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ:</label>
                                 			<input type="text" name="pasp_serial" id="pasp_serial" class="field" value="<?echo $_POST['pasp_serial']?>" tabindex="190" maxlength="6" style="width:70px; text-align:center; <?if ($_POST['pasp_serial']=="" && isset($_POST['add_abit'])) echo $element_error?>"/>
-                                   			<label for="pasp_number">№</label>
+                                   			<label for="pasp_number">пїЅ</label>
                                    			<input type="text" name="pasp_number" id="pasp_number" class="field" value="<?echo $_POST['pasp_number']?>" tabindex="200" maxlength="10" style="width:100px; text-align:center; <?if ($_POST['pasp_number']=="" && isset($_POST['add_abit'])) echo $element_error?>"/></p>
-                                		<p><label for="pasp_issue" class="small">Паспорт виданий:</label>
+                                		<p><label for="pasp_issue" class="small">пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</label>
                                 			<textarea name="pasp_issue" id="pasp_issue" cols="20" rows="2" tabindex="210" style="width:306px; margin-left:20px; <?if ($_POST['pasp_issue']=="" && isset($_POST['add_abit'])) echo $element_error?>"><?echo $_POST["pasp_issue"]?></textarea></p>
-                                		<p><label for="pasp_day" class="small">Дата видачі:</label></p>
+                                		<p><label for="pasp_day" class="small">пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ:</label></p>
                                 		<p><select name="pasp_day" id="pasp_day" class="combo" tabindex="220" style="width:45px; margin-left:20px; <?if ($_POST['pasp_day']=="" && isset($_POST['add_abit'])) echo $element_error?>">
                                 				<option value="<?echo $_POST['pasp_day']?>"> <?if ($_POST['pasp_day']!="") echo $_POST['pasp_day']; else echo "..."?> </option>
                      							<?
@@ -241,18 +240,18 @@
                      						<label for="pasp_month">/</label>
                      						<select name="pasp_month" id="pasp_month" class="combo" tabindex="230" style="width:100px; margin-left:2px; <?if ($_POST['pasp_month']=="" && isset($_POST['add_abit'])) echo $element_error?>">
                                                 <option value="<?echo $_POST['pasp_month']?>"> <?if ($_POST['pasp_month']!="") echo $_POST['pasp_month']; else echo "..."?> </option>
-                     							<option value="січня"> січня </option>
-                     							<option value="лютого"> лютого </option>
-                     							<option value="березня"> березня </option>
-                     							<option value="квітня"> квітня </option>
-                     							<option value="травня"> травня </option>
-                     							<option value="червня"> червня </option>
-                     							<option value="липня"> липня </option>
-                     							<option value="серпня"> серпня </option>
-                     							<option value="вересня"> вересня </option>
-                     							<option value="жовтня"> жовтня </option>
-                     							<option value="листопада"> листопада </option>
-                     							<option value="грудня"> грудня </option>
+                     							<option value="пїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
                      						</select>
                      						<label for="pasp_year">/</label>
                                 			<select name="pasp_year" id="pasp_year" class="combo" tabindex="240" style="width:80px; margin-left:2px; <?if ($_POST['pasp_year']=="" && isset($_POST['add_abit'])) echo $element_error?>">
@@ -261,7 +260,7 @@
                      							for($i=date("Y"); $i>=date("Y")-50; $i--) echo '<option value="'.$i.'"> '.$i.' </option>';
                      							?>
                      						</select></p>
-                     						<p><label for="birthday" class="small">Дата народження:</label></p>
+                     						<p><label for="birthday" class="small">пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</label></p>
                                 			<p><select name="birth_day" id="birth_day" class="combo" tabindex="250" style="width:45px; margin-left:20px; <?if ($_POST['birth_day']=="" && isset($_POST['add_abit'])) echo $element_error?>">
                                 				<option value="<?echo $_POST['birth_day']?>"> <?if ($_POST['birth_day']!="") echo $_POST['birth_day']; else echo "..."?> </option>
                      							<?
@@ -273,18 +272,18 @@
                      						<label for="birth_month">/</label>
                      						<select name="birth_month" id="birth_month" class="combo" tabindex="260" style="width:100px; margin-left:2px; <?if ($_POST['birth_month']=="" && isset($_POST['add_abit'])) echo $element_error?>">
                      							<option value="<?echo $_POST['birth_month']?>"> <?if ($_POST['birth_month']!="") echo $_POST['birth_month']; else echo "..."?> </option>
-                     							<option value="січня"> січня </option>
-                     							<option value="лютого"> лютого </option>
-                     							<option value="березня"> березня </option>
-                     							<option value="квітня"> квітня </option>
-                     							<option value="травня"> травня </option>
-                     							<option value="червня"> червня </option>
-                     							<option value="липня"> липня </option>
-                     							<option value="серпня"> серпня </option>
-                     							<option value="вересня"> вересня </option>
-                     							<option value="жовтня"> жовтня </option>
-                     							<option value="листопада"> листопада </option>
-                     							<option value="грудня"> грудня </option>
+                     							<option value="пїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
                      						</select>
                      						<label for="birth_year">/</label>
                                 			<select name="birth_year" id="birth_year" class="combo" tabindex="270" style="width:80px; margin-left:2px; <?if ($_POST['birth_year']=="" && isset($_POST['add_abit'])) echo $element_error?>">
@@ -296,29 +295,29 @@
                      				</fieldset>
                                	</p>
 
-                               	<p><label for="sex" class="left">Стать:</label>
+                               	<p><label for="sex" class="left">пїЅпїЅпїЅпїЅпїЅ:</label>
                                 	<fieldset class="small" style="<?if ($_POST['sex']=="" && isset($_POST['add_abit'])) echo $element_error?>">
-                               	 			<p>	<label for="sex" class="small">Чоловіча</label>
+                               	 			<p>	<label for="sex" class="small">пїЅпїЅпїЅпїЅпїЅпїЅпїЅ</label>
                         						<input type="radio" name="sex" id="male" class="inputRadio" value="male" tabindex="280" style="margin-left:1px" <?php if ($_POST['sex']=="male") echo "checked=''";?>/>
-                        						<label for="sex" class="small">Жіноча</label>
+                        						<label for="sex" class="small">ЖіпїЅпїЅпїЅпїЅ</label>
           										<input type="radio" name="sex" id="female" class="inputRadio" value="female" tabindex="290" style="margin-left:1px" <?php if ($_POST['sex']=="female") echo "checked=''";?>/>
                                				</p>
                                		</fieldset>
                                	</p>
 
-                                <p><label for="location" class="left">Місцевість:</label>
+                                <p><label for="location" class="left">МіпїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</label>
                                 	<fieldset class="small" style="<?if ($_POST['location']=="" && isset($_POST['add_abit'])) echo $element_error?>">
-                                            <p>	<label for="location" class="small">м. Житомир</label>
+                                            <p>	<label for="location" class="small">пїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅ</label>
                         						<input type="radio" name="location" id="location" class="inputRadio" value="city_zt" tabindex="300" style="margin-left:1px" <?php if ($_POST['location']=="city_zt") echo "checked=''";?>/>
-                     					    	<label for="location" class="small">міська</label>
+                     					    	<label for="location" class="small">пїЅпїЅпїЅпїЅпїЅ</label>
                         						<input type="radio" name="location" id="location" class="inputRadio" value="city" tabindex="310" style="margin-left:1px" <?php if ($_POST['location']=="city") echo "checked=''";?>/>
-                        						<label for="location" class="small">сільська</label>
+                        						<label for="location" class="small">пїЅпїЅпїЅпїЅпїЅпїЅпїЅ</label>
           										<input type="radio" name="location" id="location" class="inputRadio" value="village" tabindex="320" style="margin-left:1px" <?php if ($_POST['location']=="village") echo "checked=''";?>/>
                                				</p>
                                		</fieldset>
                                	</p>
 
-                               	<p><label for="ID_code" class="left">Ідентифікаційний номер:</label>
+                               	<p><label for="ID_code" class="left">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ:</label>
                                		<fieldset class="small">
                                		<p>
                    					<input type="text" name="ID_code" id="ID_code" class="field" value="<?echo $_POST['ID_code']?>" tabindex="330" maxlength="10" style="text-align:center; width:100px; margin-left:20px; margin-bottom:-7px;"/>
@@ -326,43 +325,43 @@
                    				    </fieldset>
                    				</p>
 
-                   				<p><label for="home_adress" class="left">Домашня адреса:</label>
+                   				<p><label for="home_adress" class="left">пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ:</label>
                                		<fieldset class="small">
-                                    	<p><label for="street" class="small" style="padding-left:45px">Вулиця:</label>
+                                    	<p><label for="street" class="small" style="padding-left:45px">пїЅпїЅпїЅпїЅпїЅпїЅ:</label>
                                 			<input type="text" name="street" id="street" class="field" value="<?echo $_POST['street']?>" tabindex="340" style="width:235px;"/></p>
-                                   		<p>	<label for="build_number" class="small"> Будинок №:</label>
+                                   		<p>	<label for="build_number" class="small"> пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ:</label>
                                    			<input type="text" name="build_number" id="build_number" class="field" value="<?echo $_POST['build_number']?>" tabindex="350" style="width:60px; text-align:center; "/>
-                                   			<label for="flat_number" class="small"> Квартира №:</label>
+                                   			<label for="flat_number" class="small"> пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ:</label>
                                    			<input type="text" name="flat_number" id="flat_number" class="field" value="<?echo $_POST['flat_number']?>" tabindex="360" style="width:55px; text-align:center"/></p>
-                                   		<p><label for="city" class="small">Місто/село:</label>
+                                   		<p><label for="city" class="small">МіпїЅпїЅпїЅ/пїЅпїЅпїЅпїЅ:</label>
                                 			<input type="text" name="city" id="city" class="field" value="<?echo $_POST['city']?>" tabindex="370" style="width:235px; <?if ($_POST['city']=="" && isset($_POST['add_abit'])) echo $element_error?>"/></p>
-                                		<p><label for="district" class="small" style="padding-left:55px">Район:</label>
+                                		<p><label for="district" class="small" style="padding-left:55px">пїЅпїЅпїЅпїЅпїЅ:</label>
                                 			<input type="text" name="district" id="district" class="field" value="<?echo $_POST['district']?>" tabindex="380" style="width:235px; <?if ($_POST['district']=="" && isset($_POST['add_abit'])) echo $element_error?>"/></p>
-                                		<p><label for="state" class="small" style="padding-left:40px">Область:</label>
+                                		<p><label for="state" class="small" style="padding-left:40px">пїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</label>
                                 			<input type="text" name="state" id="state" class="field" value="<?echo $_POST['state']?>" tabindex="390" style="width:235px; <?if ($_POST['state']=="" && isset($_POST['add_abit'])) echo $element_error?>"/></p>
-                                		<p><label for="phone" class="small" >Контактний телефон:</label>
+                                		<p><label for="phone" class="small" >пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</label>
                                 			<input type="text" name="phone" id="phone" class="field" value="<?echo $_POST['phone']?>" tabindex="400" style="width:176px; <?if ($_POST['phone']=="" && isset($_POST['add_abit'])) echo $element_error?>"/></p>
-                               			<p><label for="hostel" class="small">Потребує гуртожиток:</label>
+                               			<p><label for="hostel" class="small">пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</label>
                      						<input type="checkbox" name="hostel" id="hostel" class="checkbox" tabindex="405" <?if ($_POST['hostel']=="+") echo 'checked="checked"'?> size="1" value="+"/></p>
                      				</fieldset>
                                	</p>
 
-                               	<p><label for="military" class="left">Військова служба:</label>
+                               	<p><label for="military" class="left">ВіпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ:</label>
                                 	<fieldset class="small">
-                                        <p><label for="military" class="small" style="margin-left:31px;">Військовозобов'язаний: </label>
+                                        <p><label for="military" class="small" style="margin-left:31px;">ВіпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ'пїЅпїЅпїЅпїЅпїЅпїЅ: </label>
                                 		<input type="checkbox" name="military" id="military" class="checkbox" tabindex="410" size="1" value="+" <?if ($_POST['military']=="+") echo 'checked="checked"'?> onClick="showMilitary()"/></p>
                                 		<div id="mil_block" <?php if ($_POST['military']=="+") echo 'style="display:block"'; else echo 'style="display:none"'?>>
-                                			<p><label for="mil_doc" class="small">Тип документу:</label>
+                                			<p><label for="mil_doc" class="small">пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</label>
                                 			<select name="mil_doc" id="mil_doc" class="combo" tabindex="420" style="width:200px; margin-left:2px; <?if ($_POST['mil_doc']=="" && isset($_POST['add_abit'])) echo $element_error?>">
                      							<option value="<?echo $_POST['mil_doc']?>"> <?if ($_POST['mil_doc']!="") echo $_POST['mil_doc']; else echo "..."?> </option>
-                     							<option value="Приписне посвідчення"> Приписне посвідчення </option>
-                     							<option value="Військовий квиток"> Військовий квиток </option>
-									<option value="Військовий квиток"> Посвідчення військового </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="ВіпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ"> ВіпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ </option>
+									<option value="ВіпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ </option>
                      						</select>
                      						</p>
-                                			<p><label for="mil_issue" class="small">Виданий:</label>
+                                			<p><label for="mil_issue" class="small">пїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</label>
                                 			<textarea name="mil_issue" id="mil_issue" cols="20" rows="2" tabindex="430" style="width:302px; margin-left:20px; <?if ($_POST['mil_issue']=="" && isset($_POST['add_abit'])) echo $element_error?>"><?echo $_POST["mil_issue"];?></textarea></p>
-                                			<p><label for="mil_date" class="small">Дата видачі:</label></p>
+                                			<p><label for="mil_date" class="small">пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ:</label></p>
                                 			<p><select name="mil_day" id="mil_day" class="combo" tabindex="440" style="width:45px; margin-left:20px; <?if ($_POST['mil_day']=="" && isset($_POST['add_abit'])) echo $element_error?>">
                      							<option value="<?echo $_POST['mil_day']?>"> <?if ($_POST['mil_day']!="") echo $_POST['mil_day']; else echo "..."?> </option>
                      							<?
@@ -374,18 +373,18 @@
                      						<label for="mil_month">/</label>
                      						<select name="mil_month" id="mil_month" class="combo" tabindex="450" style="width:100px; margin-left:2px; <?if ($_POST['mil_month']=="" && isset($_POST['add_abit'])) echo $element_error?>">
                      							<option value="<?echo $_POST['mil_month']?>"> <?if ($_POST['mil_month']!="") echo $_POST['mil_month']; else echo "..."?> </option>
-                     							<option value="січня"> січня </option>
-                     							<option value="лютого"> лютого </option>
-                     							<option value="березня"> березня </option>
-                     							<option value="квітня"> квітня </option>
-                     							<option value="травня"> травня </option>
-                     							<option value="червня"> червня </option>
-                     							<option value="липня"> липня </option>
-                     							<option value="серпня"> серпня </option>
-                     							<option value="вересня"> вересня </option>
-                     							<option value="жовтня"> жовтня </option>
-                     							<option value="листопада"> листопада </option>
-                     							<option value="грудня"> грудня </option>
+                     							<option value="пїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ </option>
+                     							<option value="пїЅпїЅпїЅпїЅпїЅпїЅ"> пїЅпїЅпїЅпїЅпїЅпїЅ </option>
                      						</select>
                      						<label for="mil_year">/</label>
                                 			<select name="mil_year" id="mil_year" class="combo" tabindex="460" style="width:80px; margin-left:2px; <?if ($_POST['mil_year']=="" && isset($_POST['add_abit'])) echo $element_error;?>">
@@ -397,48 +396,48 @@
                      					</div>
                      				</fieldset>
                                 </p>
-                               	<p><label for="benefits" class="left">Пільги:</label>
+                               	<p><label for="benefits" class="left">ПіпїЅпїЅпїЅпїЅ:</label>
                                		<fieldset class="small">
-                               			<p><label for="benefits" class="small" style="margin-left:80px">Поза конкурсом: </label>
+                               			<p><label for="benefits" class="small" style="margin-left:80px">пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: </label>
                                 			<input type="checkbox" name="benefits" id="benefits" class="checkbox" tabindex="470" size="1" value="+" <?if ($_POST['benefits']=="+") echo 'checked="checked"'?> onClick="showBenefits()"/>
                                 		</p>
                                 		<div id="benefit_block"  <?php if ($_POST['benefits']=="+") echo 'style="display:block; margin-left:50px"'; else echo 'style="display:none; margin-left:50px"'?>>
                                 			<fieldset style="margin-left:-15px; margin-right:5px; <?php if ($no_benefit==1) echo $element_error;?> ">
                                 			<p><input type="checkbox" name="invalid" id="invalid" class="checkbox" tabindex="501" size="1" value="+" style="margin-left:5px;" <?if ($_POST['invalid']=="+") echo 'checked="checked"'?>/>
-                                            	<label for="invalid" class="small">Інваліди I і II групи </label></p>
+                                            	<label for="invalid" class="small">пїЅпїЅпїЅпїЅпїЅпїЅпїЅ I пїЅ II пїЅпїЅпїЅпїЅпїЅ </label></p>
                                             <p><input type="checkbox" name="syrota" id="syrota" class="checkbox" tabindex="502" size="1" value="+" style="margin-left:5px;" <?if ($_POST['syrota']=="+") echo 'checked="checked"'?>/>
-                                            	<label for="syrota" class="small">Особи з числа дітей сиріт </label></p>
+                                            	<label for="syrota" class="small">пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ </label></p>
                                             <p><input type="checkbox" name="chornob" id="chornob" class="checkbox" tabindex="50" size="1" value="+" style="margin-left:5px;" <?if ($_POST['chornob']=="+") echo 'checked="checked"'?>/>
-                                            	<label for="chornob" class="small">Чорнобильці I-II категорії</label></p>
+                                            	<label for="chornob" class="small">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ I-II пїЅпїЅпїЅпїЅпїЅпїЅпїЅ</label></p>
                                             <p><input type="checkbox" name="inozem" id="inozem" class="checkbox" tabindex="503" size="1" value="+" style="margin-left:5px;" <?if ($_POST['inozem']=="+") echo 'checked="checked"'?>/>
-                                            	<label for="inozem" class="small">Іноземці (міжнародний обмін) </label></p>
+                                            	<label for="inozem" class="small">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ) </label></p>
                                             <p><input type="checkbox" name="veteran" id="veteran" class="checkbox" tabindex="504" size="1" value="+" style="margin-left:5px;" <?if ($_POST['veteran']=="+") echo 'checked="checked"'?>/>
-                                            	<label for="veteran" class="small">Ветерани війни </label></p>
+                                            	<label for="veteran" class="small">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ </label></p>
                                             <p><input type="checkbox" name="chacht" id="chacht" class="checkbox" tabindex="505" size="1" value="+" style="margin-left:5px;" <?if ($_POST['chacht']=="+") echo 'checked="checked"'?>/>
-                                            	<label for="chacht" class="small">Престиж шахтарської праці </label></p>
+                                            	<label for="chacht" class="small">пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ </label></p>
                                             <p><input type="checkbox" name="zagybl" id="zagybl" class="checkbox" tabindex="506" size="1" value="+" style="margin-left:5px;" <?if ($_POST['zagybl']=="+") echo 'checked="checked"'?>/>
-                                            	<label for="zagybl" class="small">Діти загиблих військових </label></p>
+                                            	<label for="zagybl" class="small">ДіпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ </label></p>
                                             <p><input type="checkbox" name="zasyadka" id="zasyadka" class="checkbox" tabindex="507" size="1" value="+" style="margin-left:5px;" <?if ($_POST['zasyadka']=="+") echo 'checked="checked"'?>/>
-                                            	<label for="zasyadka" class="small">Сім'я заглиблих на шахті ім. Засядка </label></p>
-                               				<p><label for="benefit_doc" class="small">Документ, що засвідчує пільгу:</label>
+                                            	<label for="zasyadka" class="small">СіпїЅ'пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅ </label></p>
+                               				<p><label for="benefit_doc" class="small">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ:</label>
                                 			<textarea name="benefit_doc" id="benefit_doc" cols="20" rows="3" tabindex="510" style="width:270px; margin-left:20px; <?if ($_POST['benefit_doc']=="" && isset($_POST['add_abit'])) echo $element_error?>"><?echo $_POST["benefit_doc"];?></textarea></p>
                                 			</fieldset>
                                			</div>
                                		</fieldset>
                 				</p>
-                				<p><label for="benefits" class="left">Інші відомості:</label>
+                				<p><label for="benefits" class="left">пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</label>
                                		<fieldset class="small">
-                               			<p><label for="chornob34" class="small">Чорнобільці III-IV категорії: </label>
+                               			<p><label for="chornob34" class="small">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ III-IV пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: </label>
                                 			<input type="checkbox" name="chornob34" id="chornob34" class="checkbox" tabindex="520" size="1" value="+"  <?if ($_POST['chornob34']=="+") echo 'checked="checked"'?>/>
                                 		</p>
-                                		<p><label for="invalid3" class="small" style="margin-left:67px;">Інваліди III групи: </label>
+                                		<p><label for="invalid3" class="small" style="margin-left:67px;">пїЅпїЅпїЅпїЅпїЅпїЅпїЅ III пїЅпїЅпїЅпїЅпїЅ: </label>
                                 			<input type="checkbox" name="invalid3" id="invalid3" class="checkbox" tabindex="530" size="1" value="+"  <?if ($_POST['invalid3']=="+") echo 'checked="checked"'?>/>
                                 		</p>
 
                                		</fieldset>
                 				</p>
 
-								<p>	<input type="submit" name="add_abit" id="submit" class="button" value="Зберегти" tabindex="600" /></p>
+								<p>	<input type="submit" name="add_abit" id="submit" class="button" value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" tabindex="600" /></p>
                 			</fieldset>
               				</form>
 				    	</div>
@@ -446,7 +445,8 @@
 							<script type="text/javascript">
 
 							function findAb(selected_Ab)
-                       			{       							//alert ("1");
+                       			{
+       							//alert ("1");
        		                	var lastname=document.getElementById("lastname");
        		                	var firstname=document.getElementById("firstname");
        		                	var patronymic=document.getElementById("patronymic");
@@ -500,10 +500,10 @@
                                         dip_day.selectedIndex=30;
                                         dip_month.selectedIndex=6;
                                         dip_year.selectedIndex=1;
-                                        if (result.study_type=='Денна') dip_stc.checked=true;
-                                        if (result.study_type=='Заочна') dip_zao.checked=true;
-                                        if (result.finans=='Бюджет') dip_budg.checked=true;
-                                        if (result.finans=='Контракт') dip_cont.checked=true;
+                                        if (result.study_type=='пїЅпїЅпїЅпїЅпїЅ') dip_stc.checked=true;
+                                        if (result.study_type=='пїЅпїЅпїЅпїЅпїЅпїЅ') dip_zao.checked=true;
+                                        if (result.finans=='пїЅпїЅпїЅпїЅпїЅпїЅ') dip_budg.checked=true;
+                                        if (result.finans=='пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ') dip_cont.checked=true;
                                         nationality.selectedIndex=result.nationality;
                                         if (result.nationality==2)
                                         	{
@@ -566,7 +566,7 @@
 								var s = this.value;
 								s += String.fromCharCode(keyCode);
 
-								if (!(/^[АБВГДЕЖЗІЇЙКЛМНОПРСТУФХЦЧШЩЄЮЯабвгдежзиіїйклмнопрстуфхцчшщьєюя`]+\-?\s?[АБВГДЕЖЗІЇЙКЛМНОПРСТУФХЦЧШЩЄЮЯабвгдежзиіїйклмнопрстуфхцчшщьєюя`]*$/.test(s)))
+								if (!(/^[пїЅпїЅпїЅпїЅпїЅпїЅпїЅЗІпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅЩЄпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅиіїпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ`]+\-?\s?[пїЅпїЅпїЅпїЅпїЅпїЅпїЅЗІпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅЩЄпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅиіїпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ`]*$/.test(s)))
 									{
 									s.length--;
 									return false;
@@ -579,7 +579,7 @@
 							pasp_number = document.getElementById("pasp_number");
                             dip_number.onkeyup = pasp_number.onkeyup = dip_serial.onkeyup = pasp_serial.onkeyup = function()
        							{
-                                var reg = /\d/ //цыфра
+                                var reg = /\d/ //пїЅпїЅпїЅпїЅпїЅ
 								//if (reg.test(dip_serial.value)) dip_serial.value = dip_serial.value.replace(dip_serial.value[dip_serial.value.length-1] , "");
                                 //if (reg.test(pasp_serial.value)) pasp_serial.value = pasp_serial.value.replace(pasp_serial.value[pasp_serial.value.length-1] , "");
                                 dip_serial.value = dip_serial.value.toUpperCase();
